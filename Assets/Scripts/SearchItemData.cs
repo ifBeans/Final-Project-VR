@@ -1,16 +1,16 @@
 using UnityEngine;
 
-public class SearchItemData : MonoBehaviour
+[CreateAssetMenu(fileName = "SearchItemData", menuName = "Gameplay/Search Item Data")]
+public class SearchItemData : ScriptableObject
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [Header("Item Details")]
+    public string itemName;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [TextArea(2, 5)]
+    public string description;
+
+    [Header("Visuals")]
+    public Sprite itemIcon;
+    public Texture2D itemTexture;
+    public Material itemMaterial;
 }
