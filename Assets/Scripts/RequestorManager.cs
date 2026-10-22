@@ -136,7 +136,7 @@ public class RequestorManager : MonoBehaviour
 
             if (!string.IsNullOrEmpty(desc))
             {
-                dialogueText.text = $"<size=22>\"{desc}\"</size>\n\n<size=17><color=#555555>({requestedItem.itemName})</color></size>";
+                dialogueText.text = $"<size=20>Please bring me \"{desc}\"</size>";
             }
             else
             {
